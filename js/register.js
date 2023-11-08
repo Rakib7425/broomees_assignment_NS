@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const regBtn = document.getElementById("reg-btn");
 	regBtn.addEventListener("click", () => {
-		console.log("hemmo");
+		console.log("hello");
 	});
 	const handleLogin = () => {
 		const fName = document.getElementById("fname");
