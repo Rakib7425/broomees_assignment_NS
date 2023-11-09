@@ -8,11 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
 			const email = document.getElementById("register-email").value;
 			const password = document.getElementById("password").value;
 			const confirmPassword = document.getElementById("confirm-password").value;
+			const error = document.getElementById("error");
 
 			if (fName && lName && email && password && confirmPassword) {
 				alert("Successfully registered !");
 			} else {
 				alert("All fields are mandatory !");
+				error.innerHTML = `All fields are mandatory !`;
 			}
 		};
 		handleLogin();
