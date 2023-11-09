@@ -139,6 +139,7 @@ nav {
 	margin-left: 10rem;
 	position: relative;
 }
+
 @media (max-width: 768px) {
 	.header__content {
 		display: none;
