@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
 	overflow-x: hidden;
 	position: relative;
 }
 
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: "Inter", sans-serif;
 	font-weight: 400;
 	line-height: 28px;
 	color: #6a6a6a;
@@ -33,11 +32,10 @@ a.more {
 .custom-navbar {
 	background: #3b5d50 !important;
 	padding-top: 20px;
-	width: 100vw;
 	padding-bottom: 20px;
 }
 .custom-navbar .navbar-brand {
-	font-size: 25px;
+	font-size: 32px;
 	font-weight: 600;
 }
 .custom-navbar .navbar-brand > span {
@@ -118,10 +116,17 @@ a.more {
 
 .hero {
 	background: #3b5d50;
+	/* padding: calc(4rem - 30px) 0 0rem 0; */
 }
 @media (min-width: 768px) {
+	.hero {
+		padding: calc(4rem - 30px) 0 4rem 0;
+	}
 }
 @media (min-width: 992px) {
+	.hero {
+		padding: calc(8rem - 30px) 0 8rem 0;
+	}
 }
 .hero .intro-excerpt {
 	position: relative;
