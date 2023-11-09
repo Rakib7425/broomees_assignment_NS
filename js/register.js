@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	regBtn.addEventListener("click", () => {
 		console.log("hello");
 		const handleLogin = () => {
-			const fName = document.getElementById("fname");
-			const lName = document.getElementById("lname");
-			const email = document.getElementById("register-email");
-			const password = document.getElementById("password");
-			const confirmPassword = document.getElementById("confirm-password");
+			const fName = document.getElementById("fname").value;
+			const lName = document.getElementById("lname").value;
+			const email = document.getElementById("register-email").value;
+			const password = document.getElementById("password").value;
+			const confirmPassword = document.getElementById("confirm-password").value;
 
 			if (fName && lName && email && password && confirmPassword) {
 				alert("Successfully registered !");
@@ -15,5 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
 				alert("All fields are mandatory !");
 			}
 		};
+		handleLogin();
 	});
 });
